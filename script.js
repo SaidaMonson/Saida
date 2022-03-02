@@ -8,5 +8,5 @@ let adaptive;
 console.log("Здесь могла быть ваша реклама");
 console.log(div.textContent);
 console.log("commits");
-// изменение
+console.log("commits");
 alert("Закрыть");
