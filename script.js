@@ -2,7 +2,7 @@ let title = "Название проекта";
 let screens = "Простые, Сложные, Интерактивные";
 let screenPrice = 124;
 let rollback = 99;
-let fullPrice = 100000;
+let fullPrice = 1000000;
 let adaptive = false;
 
 console.log(typeof title);
@@ -18,4 +18,4 @@ console.log(screens.toLowerCase());
 console.log(screens.split(", "));
 let n;
 n = fullPrice*(rollback/100);
-console.log(n);
+console.log(n); 
