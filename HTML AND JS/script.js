@@ -1,16 +1,24 @@
+'use strict';
+const arr = ['44444', '2589', '4555', '238', '741', '99', '222'];
 
-function find(good) {
-    if(typeof(good) != 'string') {
-        console.log("Это не строка");
-    } else {
-        good = good.trim();
-        if(good.length > 30) {
-            let str = good.slice(0, 30);
-            console.log(str + '...');
-        } else {
-            console.log(good);
-        }
+for (let i = 0; i < arr.length; i++) {
+    if(arr[i][0] == '2' || arr[i][0] == '4') {
+        console.log(arr[i])
     }
 }
 
-find("Если строка более 30 знаков - то после 30го символа часть текста скрывается и вместо них появляются три точки");
+//2 способ
+/*for (let i = 0; i < arr.length; i++) {
+    if(arr[i].substring(0, 1) == '2' || arr[i].substring(0, 1) == '4') {
+        console.log(arr[i])
+    }
+}*/
+
+next:
+for (let i = 2; i <= 100; i++) {
+    for (let k = 2; k < i; k++) {
+        if(i % k == 0) continue next;
+    }
+    console.log(i, `Делители этого числа 1 и ${i}`);
+}
+
